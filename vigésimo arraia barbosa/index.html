@@ -3,235 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>20º Arraia do Barbosa - Tradição e Alegria</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>20º Arraia do Barbosa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-caption {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="header" id="inicio">
-        <div class="decoration"></div>
-        <div class="decoration"></div>
+    <header>
         <h1>20º Arraia do Barbosa</h1>
-        <p>Tradição, cultura e muita diversão!</p>
-        <a href="#sobre" class="scroll-down">
-            <i class="fas fa-chevron-down"></i>
-        </a>
+        <p>Tradição e alegria desde 2003</p>
     </header>
     
-    <nav class="navbar">
-        <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#galeria">Galeria</a></li>
-            <li><a href="#programacao">Programação</a></li>
-            <li><a href="#local">Local</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-    
     <div class="container">
-        <section class="content-section" id="sobre">
-            <h2><i class="fas fa-history"></i> História do Evento</h2>
-            <p>O Arraia do Barbosa nasceu em 2003 como uma pequena celebração comunitária e hoje se tornou um dos maiores eventos culturais da região. Ao longo desses 20 anos, o arraial já recebeu mais de 50 mil visitantes e se consolidou como uma tradição local.</p>
-            <p>O nome "Barbosa" homenageia o fundador do bairro, Sr. João Barbosa, que sempre valorizou as tradições caipiras e incentivava as festividades juninas.</p>
-            
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number" data-count="20">0</div>
-                    <div class="stat-label">Anos de Tradição</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="50">0</div>
-                    <div class="stat-label">Mil Visitantes</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="15">0</div>
-                    <div class="stat-label">Toneladas de Comida</div>
-                </div>
-            </div>
-        </section>
+        <h2>Galeria de Fotos</h2>
+        <p>Confira alguns momentos especiais do nosso arraial:</p>
         
-        <section class="content-section" id="galeria">
-            <h2><i class="fas fa-images"></i> Galeria</h2>
-            <p>Alguns momentos marcantes das edições anteriores:</p>
-            
-            <div class="image-gallery">
-                <div class="gallery-item">
-                    <img src="images/banner.jpg" alt="Arraia do Barbosa" class="gallery-img">
-                    <div class="gallery-caption">Festa tradicional</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/comida-tipica.jpg" alt="Comidas típicas" class="gallery-img">
-                    <div class="gallery-caption">Delícias juninas</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/quadrilha.jpg" alt="Quadrilha" class="gallery-img">
-                    <div class="gallery-caption">Quadrilha matuta</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/local.jpg" alt="Local do evento" class="gallery-img">
-                    <div class="gallery-caption">Praça João Barbosa</div>
-                </div>
+        <div class="gallery">
+            <!-- Imagem 1 -->
+            <div class="gallery-item">
+                <img src="festa.jpg" alt="Festa do Arraial">
+                <div class="gallery-caption">Noite de festa no arraial</div>
             </div>
             
-            <button id="loadMore" class="btn">Carregar mais fotos</button>
-        </section>
-        
-        <section class="content-section" id="programacao">
-            <h2><i class="fas fa-calendar-alt"></i> Programação</h2>
-            <p>Confira a programação completa do 20º Arraia do Barbosa:</p>
+            <!-- Imagem 2 -->
+            <div class="gallery-item">
+                <img src="comidas.jpg" alt="Comidas típicas">
+                <div class="gallery-caption">Delícias da culinária caipira</div>
+            </div>
             
-            <div class="schedule">
-                <div class="day">
-                    <h3>Sexta-feira - 23/06</h3>
-                    <ul class="events">
-                        <li>
-                            <span class="time">18:00</span>
-                            <span class="event">Abertura oficial</span>
-                        </li>
-                        <li>
-                            <span class="time">19:00</span>
-                            <span class="event">Apresentação de dança das escolas</span>
-                        </li>
-                        <li>
-                            <span class="time">20:30</span>
-                            <span class="event">Show com Pé de Serra Moderno</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="day">
-                    <h3>Sábado - 24/06</h3>
-                    <ul class="events">
-                        <li>
-                            <span class="time">16:00</span>
-                            <span class="event">Gincanas juninas</span>
-                        </li>
-                        <li>
-                            <span class="time">18:00</span>
-                            <span class="event">Quadrilha As Estrelas do Sertão</span>
-                        </li>
-                        <li>
-                            <span class="time">21:00</span>
-                            <span class="event">Fogueira e fogos de artifício</span>
-                        </li>
-                    </ul>
-                </div>
+            <!-- Imagem 3 -->
+            <div class="gallery-item">
+                <img src="quadrilha.jpg" alt="Quadrilha">
+                <div class="gallery-caption">Quadrilha tradicional</div>
             </div>
-        </section>
-        
-        <section class="content-section" id="local">
-            <h2><i class="fas fa-map-marker-alt"></i> Localização</h2>
-            <div class="location-container">
-                <div class="location-info">
-                    <p><i class="fas fa-calendar-day"></i> <strong>Data:</strong> 23 e 24 de Junho de 2023</p>
-                    <p><i class="fas fa-clock"></i> <strong>Horário:</strong> A partir das 16h</p>
-                    <p><i class="fas fa-map-pin"></i> <strong>Local:</strong> Praça João Barbosa - Centro</p>
-                    <p><i class="fas fa-ticket-alt"></i> <strong>Entrada:</strong> 1kg de alimento não perecível</p>
-                    
-                    <div class="countdown">
-                        <h3>Contagem regressiva:</h3>
-                        <div id="countdown-timer">
-                            <div class="countdown-item">
-                                <span id="days">00</span>
-                                <span>Dias</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span id="hours">00</span>
-                                <span>Horas</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span id="minutes">00</span>
-                                <span>Minutos</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span id="seconds">00</span>
-                                <span>Segundos</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.715427058558!2d-43.9324369243375!3d-19.94096653749211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6999ed62daafd%3A0x5665670781743a6e!2sPra%C3%A7a%20Rio%20Branco%2C%20Belo%20Horizonte%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+            
+            <!-- Imagem 4 -->
+            <div class="gallery-item">
+                <img src="decoracao.jpg" alt="Decoração">
+                <div class="gallery-caption">Decoração típica</div>
             </div>
-        </section>
-        
-        <section class="content-section" id="contato">
-            <h2><i class="fas fa-envelope"></i> Contato</h2>
-            <div class="contact-container">
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensagem:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Enviar Mensagem</button>
-                </form>
-                
-                <div class="contact-info">
-                    <h3>Informações de contato</h3>
-                    <p><i class="fas fa-phone"></i> (31) 98765-4321</p>
-                    <p><i class="fas fa-envelope"></i> contato@arraiadobarbosa.com.br</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Associação Comunitária do Barbosa</p>
-                    
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
+            
+            <!-- Imagem 5 -->
+            <div class="gallery-item">
+                <img src="fogueira.jpg" alt="Fogueira">
+                <div class="gallery-caption">Fogueira junina</div>
             </div>
-        </section>
+            
+            <!-- Imagem 6 -->
+            <div class="gallery-item">
+                <img src="pessoas.jpg" alt="Público">
+                <div class="gallery-caption">Nossa comunidade reunida</div>
+            </div>
+        </div>
     </div>
     
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <h3>Arraia do Barbosa</h3>
-                <p>20 anos de tradição</p>
-            </div>
-            
-            <div class="footer-links">
-                <h4>Links Rápidos</h4>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#programacao">Programação</a></li>
-                    <li><a href="#local">Localização</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-newsletter">
-                <h4>Receba novidades</h4>
-                <form id="newsletterForm">
-                    <input type="email" placeholder="Seu email" required>
-                    <button type="submit" class="btn">Assinar</button>
-                </form>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2023 20º Arraia do Barbosa. Todos os direitos reservados.</p>
-        </div>
+    <footer>
+        <p>© 2023 20º Arraia do Barbosa - Todos os direitos reservados</p>
     </footer>
-
-    <a href="#inicio" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
