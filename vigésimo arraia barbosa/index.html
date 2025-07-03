@@ -4,129 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>20º Arraia do Barbosa</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        
-        header {
-            background-color: #e74c3c;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        
-        .gallery-item {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-        
-        .gallery-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
-        
-        .gallery-caption {
-            padding: 15px;
-            text-align: center;
-        }
-        
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-        
-        @media (max-width: 600px) {
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-            
-            h1 {
-                font-size: 1.8em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>20º Arraia do Barbosa</h1>
         <p>Tradição e alegria desde 2003</p>
     </header>
     
-    <div class="container">
+    <main class="container">
         <h2>Galeria de Fotos</h2>
-        <p>Confira alguns momentos especiais do nosso arraial:</p>
+        <p class="subtitle">Confira os melhores momentos do nosso arraial</p>
         
-        <div class="gallery">
+        <div class="image-gallery">
             <!-- Imagem 1 -->
-            <div class="gallery-item">
-                <img src="festa.jpg" alt="Festa do Arraial">
-                <div class="gallery-caption">Noite de festa no arraial</div>
+            <div class="image-card">
+                <img src="images/festa.jpg" alt="Festa do Arraial">
+                <div class="image-info">
+                    <h3>Noite de Festa</h3>
+                    <p>Momento animado do nosso arraial</p>
+                </div>
             </div>
             
             <!-- Imagem 2 -->
-            <div class="gallery-item">
-                <img src="comidas.jpg" alt="Comidas típicas">
-                <div class="gallery-caption">Delícias da culinária caipira</div>
+            <div class="image-card">
+                <img src="images/comidas.jpg" alt="Comidas típicas">
+                <div class="image-info">
+                    <h3>Comidas Típicas</h3>
+                    <p>Delícias da culinária caipira</p>
+                </div>
             </div>
             
             <!-- Imagem 3 -->
-            <div class="gallery-item">
-                <img src="quadrilha.jpg" alt="Quadrilha">
-                <div class="gallery-caption">Quadrilha tradicional</div>
+            <div class="image-card">
+                <img src="images/quadrilha.jpg" alt="Quadrilha">
+                <div class="image-info">
+                    <h3>Quadrilha</h3>
+                    <p>Dança tradicional do evento</p>
+                </div>
             </div>
             
             <!-- Imagem 4 -->
-            <div class="gallery-item">
-                <img src="decoracao.jpg" alt="Decoração">
-                <div class="gallery-caption">Decoração típica</div>
+            <div class="image-card">
+                <img src="images/decoracao.jpg" alt="Decoração">
+                <div class="image-info">
+                    <h3>Decoração</h3>
+                    <p>Ambiente temático do arraial</p>
+                </div>
             </div>
             
             <!-- Imagem 5 -->
-            <div class="gallery-item">
-                <img src="fogueira.jpg" alt="Fogueira">
-                <div class="gallery-caption">Fogueira junina</div>
+            <div class="image-card">
+                <img src="images/fogueira.jpg" alt="Fogueira">
+                <div class="image-info">
+                    <h3>Fogueira</h3>
+                    <p>Tradição das festas juninas</p>
+                </div>
             </div>
             
             <!-- Imagem 6 -->
-            <div class="gallery-item">
-                <img src="pessoas.jpg" alt="Público">
-                <div class="gallery-caption">Nossa comunidade reunida</div>
+            <div class="image-card">
+                <img src="images/pessoas.jpg" alt="Público">
+                <div class="image-info">
+                    <h3>Comunidade</h3>
+                    <p>Pessoas reunidas no evento</p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
     
-    <footer>
-        <p>© 2023 20º Arraia do Barbosa - Todos os direitos reservados</p>
+    <footer class="footer">
+        <p>© 2023 - 20º Arraia do Barbosa</p>
+        <p>Todos os direitos reservados</p>
     </footer>
 </body>
 </html>
